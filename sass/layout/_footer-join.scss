@@ -1,5 +1,14 @@
 .join__margin {
-  margin-right: 93px;
+  @media screen and(max-width:479px), (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 
 .footer__titel {
