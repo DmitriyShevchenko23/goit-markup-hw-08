@@ -302,7 +302,7 @@ img {
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px), (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -401,14 +401,25 @@ img {
   align-items: center;
 }
 
+@media screen and (max-width: 479px), (min-width: 480px) {
+  .logo {
+    padding: 16px 0 16px 0;
+  }
+}
+
 .logo__black {
   color: #212121;
 }
 
-/* навигация -----------------------------*/
 .nav {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav .nav__list {
@@ -442,9 +453,7 @@ img {
   color: #2196f3;
 }
 
-/* почта+телефон -----------------------------*/
 .contacts {
-  display: flex;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
@@ -453,8 +462,34 @@ img {
   list-style: none;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {
