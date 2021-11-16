@@ -716,36 +716,43 @@ img {
   background-origin: border-box;
 }
 
-.benefits {
-  display: flex;
-}
-
-@media screen and (max-width: 479px), (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .benefits {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px), (max-width: 1199px) {
-  .benefits {
+    display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .benefits {
     display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits .benefits__item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits__item:not(:last-child) {
+  .benefits .benefits__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 479px), (min-width: 480px) {
-  .benefits__wrapper {
+  .benefits .benefits__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,7 +764,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits__wrapper {
+  .benefits .benefits__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -770,7 +777,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits__wrapper {
+  .benefits .benefits__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -782,7 +789,7 @@ img {
   }
 }
 
-.benefits__titel {
+.benefits .benefits__titel {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -792,7 +799,7 @@ img {
   color: #212121;
 }
 
-.benefits__text {
+.benefits .benefits__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
@@ -801,8 +808,16 @@ img {
   letter-spacing: 0.03em;
 }
 
-.section--pading {
-  padding-top: 0;
+@media screen and (min-width: 1200px) {
+  .section--pading {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section--none {
+    display: none;
+  }
 }
 
 .jobs {
@@ -839,8 +854,18 @@ img {
   background-color: #f5f4fa;
 }
 
-.team {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    display: flex;
+  }
 }
 
 .team .team__item {
@@ -848,8 +873,35 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .team__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .team .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team .team__item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .team .team__img {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team .team__img {
+    width: 270px;
+  }
 }
 
 .team .team__card {
@@ -913,19 +965,52 @@ img {
   fill: #ffffff;
 }
 
-.clients {
-  display: flex;
+@media screen and (max-width: 479px), (min-width: 480px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.clients .clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients .clients__item {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .clients .clients__item {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .clients__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 172px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -935,6 +1020,24 @@ img {
 .clients .clients__link:hover, .clients .clients__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .clients .clients__link {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .clients__link {
+    width: 172px;
+  }
 }
 
 .clients__icon {

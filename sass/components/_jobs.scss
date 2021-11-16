@@ -1,6 +1,14 @@
 .section--pading {
-  padding-top: 0;
+  @media screen and(min-width:1200px) {
+    padding-top: 0;
+  }
 }
+.section--none {
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
+}
+
 .jobs {
   display: flex;
   .jobs__item:not(:last-child) {
