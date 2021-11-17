@@ -411,6 +411,14 @@ img {
   color: #212121;
 }
 
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .nav {
   display: flex;
   align-items: center;
