@@ -1,5 +1,5 @@
 .clients {
-  @media screen and(max-width:479px), (min-width: 480px) {
+  @media screen and(min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

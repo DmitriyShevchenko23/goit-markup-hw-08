@@ -65,13 +65,19 @@
 
 .checkbox {
   .checkbox__label {
+    @media screen and(max-width:1199px) {
+      font-size: 12px;
+    }
+    @media screen and(min-width:1200px) {
+      font-size: 14px;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
 
-    font-size: 14px;
+    // font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     cursor: pointer;
