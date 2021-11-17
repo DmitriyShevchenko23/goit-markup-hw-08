@@ -1,13 +1,4 @@
 .header {
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 768px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 1200px;
-  // }
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +7,15 @@
   background-color: $primary-white-color;
   border-bottom: 1px solid #eeeeee;
   .header__container {
+    // @media screen and(max-width:479px), (min-width: 480px) {
+    //
+    // }
+    // @media screen and (min-width: 768px) {
+    //
+    // }
+    // @media screen and (min-width: 1200px) {
+    //
+    // }
     display: flex;
     align-items: center;
   }
