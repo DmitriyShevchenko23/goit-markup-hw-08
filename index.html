@@ -19,17 +19,69 @@
 <!--шапка сайта---------------------------------------->
     <header class="header">
         <div class="container header__container">
-
-            <a class="logo" href="">Web<span class="logo__black">Studio</span></a>
-            <button class="menu__button" type="button">
-                <svg width="40" height="40">
-                    <use href="./images/svg/icons.svg#icon-burger-menu"></use>
-                    <use href="./images/svg/icons.svg#icon-burger-close"></use>
-                </svg>
-            </button>
-<!------------------ навигация--------------------------------------- -->
+<!------------------ навигация + меню--------------------------------------- -->
             <nav class="nav">
-                <ul class="nav__list">
+                <a class="logo" href="">Web<span class="logo__black">Studio</span></a>
+                <button 
+                class="menu__button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="menu__container"
+                data-menu-button >
+
+                    <svg width="40" height="40" aria-label="переключатель мобилного меню" >
+                        <use class="menu__close" href="./images/svg/icons.svg#icon-burger-close"></use>
+                        <use class="menu__burger" href="./images/svg/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                    
+                </button>
+                <div class="menu__container" aria-controls="menu__container" data-menu>
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+<!--  ---------------------- контакты ------------------------------------------>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="info@devstudio.com">
+                                <svg class="contacts__icon" width="16px" height="12px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link" href="+380961111111">
+                                <svg class="contacts__icon" width="10px" height="16px">
+                                    <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__social">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Instagram</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Twitter</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Facebook </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">LinkedIn</a>
+                        </li>
+
+                    </ul>
+                    
+                    </nav>
+                </div>
+<!------------------------------------------------------------------------------>
+                <!-- <ul class="nav__list">
                     <li class="nav__item ">
                         <a class="nav__link nav__link--current" href="./index.html">Студия</a>
                     </li>
@@ -40,9 +92,9 @@
                         <a class="nav__link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </nav>
-<!-- контакты ------------------------------------------------------------- -->
-            <ul class="contacts">
+            </nav> -->
+<!-- --------------------------------------------------------------------------->
+            <!-- <ul class="contacts">
                 <li class="contacts__item">
                         <a class="contacts__link" href="info@devstudio.com">
                             <svg class="contacts__icon" width="16px" height="12px">
@@ -55,7 +107,7 @@
                             <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </header>
     <!--уникальный контент страницы----------------------------------------------------->
@@ -473,6 +525,7 @@
             </div>
         </div>  
     </footer>
+    <script src="./js/header-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

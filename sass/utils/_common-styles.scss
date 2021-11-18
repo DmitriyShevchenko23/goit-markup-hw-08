@@ -44,6 +44,9 @@
   color: $accent-color;
 }
 .nav__link--current::after {
+  @media screen and(max-width:767px) {
+    display: none;
+  }
   content: "";
 
   position: absolute;

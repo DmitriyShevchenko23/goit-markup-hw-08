@@ -7,15 +7,6 @@
   background-color: $primary-white-color;
   border-bottom: 1px solid #eeeeee;
   .header__container {
-    // @media screen and(max-width:479px), (min-width: 480px) {
-    //
-    // }
-    // @media screen and (min-width: 768px) {
-    //
-    // }
-    // @media screen and (min-width: 1200px) {
-    //
-    // }
     display: flex;
     align-items: center;
   }
@@ -24,15 +15,15 @@
 .logo {
   @media screen and(max-width:479px), (min-width: 480px) {
     padding: 16px 0 16px 0;
+    margin-right: 276px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin: 0;
   }
 }
 .logo__black {
   color: $title-text-color;
-}
-.menu__button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
 }
