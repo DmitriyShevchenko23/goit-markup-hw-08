@@ -49,5 +49,12 @@
     &:focus {
       color: $accent-color;
     }
+    &.gray {
+      color: $main-text-color;
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
   }
 }

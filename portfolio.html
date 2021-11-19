@@ -17,36 +17,64 @@
     <!--шапка-->
 <header class="header">
     <div class="container header__container">
-        <!------------------ навигация--------------------------------------- -->
         <a class="logo" href="">Web<span class="logo__black">Studio</span></a>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item ">
-                    <a class="nav__link " href="./index.html">Студия</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav__item">
-                    <a class="nav__link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- контакты ------------------------------------------------------------- -->
-        <ul class="contacts">
-            <li class="contacts__item">
-                <a class="contacts__link" href="info@devstudio.com">
-                    <svg class="contacts__icon" width="16px" height="12px">
-                        <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="contacts__item">
-                <a class="contacts__link" href="+380961111111">
-                    <svg class="contacts__icon" width="10px" height="16px">
-                        <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
-            </li>
-        </ul>
+        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__container"
+            data-menu-button>
+
+            <svg class="menu__icons" width="40" height="40" aria-label="переключатель мобилного меню">
+                <use class="icon__close" href="./images/svg/icons.svg#icon-burger-close"></use>
+                <use class="icon__burger" href="./images/svg/icons.svg#icon-burger-menu"></use>
+            </svg>
+
+        </button>
+        <!------------------ навигация + меню--------------------------------------- -->
+        <div class="menu__container" aria-controls="menu__container" data-menu>
+            <div class="menu__wrapper">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a class="nav__link nav__link--current" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu__wrapper">
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="info@devstudio.com">
+                            <svg class="contacts__icon" width="16px" height="12px">
+                                <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="+380961111111">
+                            <svg class="contacts__icon" width="10px" height="16px">
+                                <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <ul class="menu__social">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Instagram</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Twitter</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Facebook </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
     <!--уникальный контент-->
@@ -245,10 +273,10 @@
                             Киев, пр-т Леси Украинки, 26</a>
                     </li>
                     <li class="address__item">
-                        <a class="contacts__link" href="mailto:info@example.com">info@example.com</a>
+                        <a class="address__link gray" href="mailto:info@example.com">info@example.com</a>
                     </li>
                     <li class="address__item">
-                        <a class="contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <a class="address__link gray" href="tel:+380991111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
 
@@ -304,6 +332,6 @@
         </div>
     </div>
 </footer>
-    
+    <script src="./js/header-menu.js"></script>
 </body>
 </html>
