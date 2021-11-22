@@ -1,12 +1,10 @@
 .join__margin {
-  @media screen and(max-width:479px), (min-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
+  @media screen and(min-width: 480px) {
+    text-align: center;
   }
 
   @media screen and(min-width:1200px) {
+    text-align: start;
     margin-right: 93px;
   }
 }

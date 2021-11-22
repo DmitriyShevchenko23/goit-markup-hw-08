@@ -43,25 +43,7 @@
   text-align: center;
   color: $title-text-color;
 }
-.nav__link--current {
-  color: $accent-color;
-}
-.nav__link--current::after {
-  @media screen and(max-width:767px) {
-    display: none;
-  }
-  content: "";
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $accent-color;
-}
 .logo {
   font-family: raleway, sans-serif;
   font-weight: 700;

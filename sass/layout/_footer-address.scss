@@ -1,34 +1,25 @@
 .address__margin {
-  @media screen and(max-width:479px), (min-width: 480px) {
+  @media screen and(max-width:1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
-  }
-  @media screen and(min-width:768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 165px 60px 0;
   }
   @media screen and(min-width:1200px) {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     margin: 0 70px 0 0;
   }
 }
 .address {
-  width: 231px;
-
   .address__list {
-    @media screen and(max-width:479px), (min-width: 480px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    text-align: center;
+    @media screen and(max-width:767px) {
+      margin-bottom: 60px;
     }
 
     @media screen and(min-width:1200px) {
-      display: inline-block;
+      text-align: start;
     }
   }
   .address__item {

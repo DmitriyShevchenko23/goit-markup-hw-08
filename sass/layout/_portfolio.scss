@@ -1,35 +1,31 @@
 .portfolio {
-  @media screen and(min-width:480px) {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
   @media screen and(min-width:768px) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and(min-width:1200px) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   .portfolio__item {
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
-    @media screen and(min-width:480px) {
-      display: block;
-      margin: 0 0 30px 0;
+    @media screen and(max-width:767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
     @media screen and(min-width:768px) {
       flex-basis: calc((100% - 4 * 15px) / 2);
-      margin: 0 15px 15px 0;
+      margin: 15px;
     }
     @media screen and(min-width:1200px) {
       flex-basis: calc((100% - 6 * 15px) / 3);
-      margin: 0 15px 15px 0;
+      margin: 15px;
       // margin-right: 30px;
       // margin-bottom: 30px;
 
@@ -42,7 +38,6 @@
     }
   }
   .portfolio__link {
-    /* на 8м дз тут нужен будет флекс */
     display: block;
     text-decoration: none;
 
