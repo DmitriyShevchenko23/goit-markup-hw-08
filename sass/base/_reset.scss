@@ -2,6 +2,9 @@ body {
   padding-top: 64px;
   font-family: roboto, sans-serif;
   color: $main-text-color;
+  @media screen and(min-width:768px) {
+    padding-top: 80px;
+  }
 }
 h1,
 h2,
