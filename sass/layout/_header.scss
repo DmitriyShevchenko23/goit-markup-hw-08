@@ -6,9 +6,7 @@
   z-index: 1;
   background-color: $primary-white-color;
   border-bottom: 1px solid #eeeeee;
-  @media screen and(max-width:767px) {
-    height: 60px;
-  }
+
   .header__container {
     display: flex;
     align-items: center;

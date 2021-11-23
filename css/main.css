@@ -391,12 +391,6 @@ img {
   border-bottom: 1px solid #eeeeee;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    height: 60px;
-  }
-}
-
 .header .header__container {
   display: flex;
   align-items: center;
