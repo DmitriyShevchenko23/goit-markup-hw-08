@@ -60,15 +60,25 @@
   }
   .menu__social {
     display: none;
-    @media screen and(max-width: 767px) {
+    @media screen and(max-width:479px) {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+    }
+    @media screen and(min-width: 480px) and(max-width:767px) {
+      display: flex;
     }
   }
   .menu__item {
-    &:not(:last-child) {
-      margin-right: 20px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    @media screen and(max-width:479px) {
+      &:nth-child(-n + 2) {
+        margin-bottom: 5px;
+      }
+    }
+    @media screen and(min-width: 480px) and(max-width:767px) {
+      &:not(:last-child) {
+        margin-right: 20px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
     }
   }
   .menu__link {

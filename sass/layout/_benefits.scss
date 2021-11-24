@@ -10,7 +10,7 @@
     margin: 0;
   }
   .benefits__item {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and(max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -27,15 +27,22 @@
     }
   }
   .benefits__wrapper {
-    @media screen and(min-width: 480px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 120px;
-      margin-bottom: 30px;
-      border-radius: 4px;
-      background-color: $bg-white-color;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $bg-white-color;
+    // @media screen and(min-width: 480px) {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   height: 120px;
+    //   margin-bottom: 30px;
+    //   border-radius: 4px;
+    //   background-color: $bg-white-color;
+    // }
     @media screen and(min-width:768px) {
       display: flex;
       justify-content: center;
