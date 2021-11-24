@@ -339,20 +339,19 @@ img {
 
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .section__title {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.2;
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -733,7 +732,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/jpeg/hero/tablet/tablet-hero.jpg);
   }
